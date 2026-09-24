@@ -328,7 +328,7 @@ async function typeAndSend(text) {
   await wait(120, false);
   sendBtn.classList.remove('pulse');
   sendBtn.disabled = true;
-  field.innerHTML = '<span class="placeholder">iMessage</span>';
+  field.innerHTML = '<span class="placeholder">Message</span>';
 
   const bubble = glass(document.createElement('div'));
   bubble.className += ' bubble';
@@ -400,7 +400,7 @@ function reset() {
   abortAll();
   thread.innerHTML = '';
   choicesEl.innerHTML = '';
-  field.innerHTML = '<span class="placeholder">iMessage</span>';
+  field.innerHTML = '<span class="placeholder">Message</span>';
   lastSide = null;
   lastRow = null;
   lastReceipt = null;
